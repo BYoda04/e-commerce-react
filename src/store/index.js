@@ -7,6 +7,8 @@ import product from './slices/product.slice'
 import categorys from './slices/categorys.slice';
 import stock from './slices/stock.slice';
 import categorysName from './slices/categorysName.slice';
+import user from './slices/user.slice';
+import purchases from './slices/purchases.slice';
 
 export default configureStore({
     reducer: {
@@ -17,6 +19,8 @@ export default configureStore({
         product,
         categorys,
         stock,
-        categorysName
+        categorysName,
+        user,
+        purchases
     }
 })

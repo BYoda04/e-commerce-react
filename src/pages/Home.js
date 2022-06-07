@@ -1,7 +1,6 @@
 import { React } from 'react';
 import { useSelector } from 'react-redux';
-import { Loader, Products, Search } from '../components';
-import Filter from '../components/Filter';
+import { Loader, Products, Search, Filter } from '../components';
 
 const Home = () => {
 

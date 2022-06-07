@@ -4,7 +4,7 @@ export const logedSlice = createSlice({
     name: 'loged',
     initialState: false,
     reducers: {
-        loggin: state=>true
+        loggin: (state,action)=>action.payload
     }
 })
 
