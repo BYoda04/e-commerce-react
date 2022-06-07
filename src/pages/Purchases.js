@@ -10,7 +10,7 @@ const Purchases = () => {
 
     useEffect(()=>{
         dispatch(getPurchases())
-    },[])
+    },[dispatch])
 
     console.log(purchases)
 

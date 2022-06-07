@@ -18,7 +18,7 @@ const Login = () => {
         } else {
             dispatch(loggin(false))
         }
-    },[])
+    },[dispatch])
 
     const changeSelected = ()=>{
         setSelected(!selected)
