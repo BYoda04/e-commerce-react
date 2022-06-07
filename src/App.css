@@ -1,38 +1,67 @@
-.App {
+
+@import url('https://fonts.googleapis.com/css2?family=Bebas+Neue&display=swap');
+
+*{
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+  font-weight: 900;
+  font-family: 'Bebas Neue', cursive;
+}
+
+a{
+  text-decoration: none;
+  color: #222;
+}
+
+button{
+  all: unset;
+  font-size: 1.3em;
+  letter-spacing: .2em;
   text-align: center;
+  text-transform: uppercase;
+  padding: 1rem .8rem 1rem 1rem;
+  border-radius: 1rem;
+  background: #222;
+  color: #FAFBFD;
 }
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
+.App{
+  height: auto;
 }
 
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
+.dayBG{
+  background: #FAFBFD;
+  color: #222;
+  transition: 0.5s;
 }
 
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
+.nightBG{
+  background: #222;
+  color: #FAFBFD;
+  transition: 0.5s;
 }
 
-.App-link {
-  color: #61dafb;
+.cursor{
+  cursor: pointer;
 }
 
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+.container{
+  padding-top: 12vh;
+}
+
+.price{
+  color: #222;
+  padding: 1rem 1.5rem;
+  font-size: 1.5em;
+}
+
+.img img{
+  max-width: 100%;
+  height: 100%;
+}
+
+.price span{
+  color: #808080;
+  font-size: 1em;
 }

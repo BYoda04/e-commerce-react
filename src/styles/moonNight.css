@@ -1,0 +1,48 @@
+
+.night{
+    position: fixed;
+    bottom: 0;
+    right: 0;
+    width: 3.5rem;
+    height: 3.5rem;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 100%;
+    margin: 1rem;
+    background: #222;
+    box-shadow: 0 0 10px rgba(255, 255, 255, 0.5);
+    transition: .5s;
+}
+
+.day{
+    position: fixed;
+    bottom: 0;
+    right: 0;
+    width: 3.5rem;
+    height: 3.5rem;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 100%;
+    margin: 1rem;
+    background: #FAFBFD;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
+    transition: .5s;
+}
+
+.day p{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: #222;
+    font-size: 2em;
+}
+
+.night p{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: #fff;
+    font-size: 2em;
+}

@@ -1,0 +1,9 @@
+
+.button-back{
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    padding-left: 1rem;
+    font-size: 1.2em;
+    letter-spacing: .1em;
+}

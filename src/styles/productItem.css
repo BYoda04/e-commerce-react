@@ -1,0 +1,49 @@
+
+.product-item .card-list-add{
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-end;
+}
+
+.stock-value{
+    font-size: 1.5em;
+}
+
+.product-item .card-list-add button{
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    padding: 1rem;
+}
+
+.description{
+    padding-bottom: 2rem;
+    font-size: .8em;
+    letter-spacing: .05em;
+    line-height: 1.5em;
+    text-align: justify;
+    color: #808080;
+}
+
+.stock div{
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+}
+
+.stock div:nth-child(2){
+    padding: 0 1rem;
+}
+
+.stock p{
+    color: #222;
+    padding: 0 1.5rem;
+}
+
+.stock button{
+    background: #fff;
+    color: #222;
+    border-radius: 100%;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
+    padding: .5rem !important;
+}

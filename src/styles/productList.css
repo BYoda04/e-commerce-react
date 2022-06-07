@@ -1,0 +1,42 @@
+
+.cards-list{
+    position: relative;
+    margin: 2rem;
+    padding: 1.5rem;
+    border-radius: 1rem;
+    transition: 0.2s;
+}
+
+.day-shadow{
+    background: #fafbfd;
+    box-shadow: 0 0px 15px rgba(0, 0, 0, 0.5);
+    transition: 0.2s;
+}
+
+.card-list-container{
+    text-align: center;
+}
+
+.card-list-img{
+    height: 250px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.card-list-img-container{
+    height: 200px;
+}
+
+.card-list-name{
+    margin: 2rem 0;
+    font-size: 1.5em;
+    letter-spacing: .1em;
+    color: #222;
+}
+
+.card-list-add{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
