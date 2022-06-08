@@ -64,7 +64,7 @@ const CartItem = ({product}) => {
                             </button>
                         </form>
                     </div>
-                    <div className='cart-item-trash' onClick={()=>eraser(product?.productsInCart?.productId)}>
+                    <div className='cart-item-trash cursor' onClick={()=>eraser(product?.productsInCart?.productId)}>
                             <ion-icon name="trash-outline"></ion-icon>
                     </div>
                 </div>

@@ -41,3 +41,45 @@
 .info-container ion-icon,.log-out ion-icon{
     font-size: 1em;
 }
+
+@media only screen and (min-width:620px) and (max-width: 1280px) {
+
+    .logout-container {
+        width: 90vw;
+        height: 55vh;
+        background: #fff;
+        color: #222;
+        border-radius: 1rem;
+        box-shadow: 0 0 10px rgb(0 0 0 / 50%);
+        display: flex;
+        justify-content: center;
+        align-items: flex-start;
+        padding-top: 2rem;
+    }
+
+    .info-container {
+        position: absolute;
+        top: 25vh;
+        left: 38vw;
+        font-size: 2em;
+    }
+
+    .log-out {
+        position: absolute;
+        top: 58vh;
+        right: 18vw;
+        font-size: 2em;
+    }
+
+}
+
+@media only screen and (min-width:1280px) {
+
+    .info-container {
+        position: absolute;
+        top: 33vh;
+        left: 43vw;
+        font-size: 2em;
+    }
+
+}

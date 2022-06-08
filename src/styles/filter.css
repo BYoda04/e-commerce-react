@@ -65,3 +65,21 @@
     font-size: 1.5em;
     font-weight: 700;
 }
+
+@media only screen and (min-width:620px) and (max-width: 1280px){
+
+    .filter{
+        background: #808080;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        width: 220px;
+        height: 55px;
+        gap: 10px;
+        padding: .5rem .8rem;
+        border-radius: 1.5rem;
+        letter-spacing: .2em;
+        font-size: 1.5em;
+    }
+
+}

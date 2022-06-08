@@ -66,3 +66,126 @@
   background: #222;
   border-radius: 1rem;
 }
+
+@media only screen and (min-width:620px) and (max-width: 1280px) {
+
+    .cart-container {
+        position: absolute;
+        width: 70vw;
+        height: 70vh;
+        background: #fff;
+        color: #222;
+        border-radius: 1rem;
+        box-shadow: 0 0 10px rgb(0 0 0 / 50%);
+        padding: 0.5rem;
+        padding-top: 5rem;
+        z-index: 1000000;
+    }
+
+    .cart-body {
+        padding: 1rem;
+        height: 500px;
+        overflow: hidden;
+        overflow-y: scroll;
+    }
+
+    .cart-item {
+        margin: auto !important;
+        margin-bottom: 3rem !important;
+        width: 450px;
+    }
+
+    .cart-item-header {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        font-size: 2.5em;
+    }
+
+    .cart-item-header p{
+        margin-bottom: 2rem;
+    }
+
+    .cart-item-img {
+        width: 300px;
+        height: 200px;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        margin: auto;
+    }
+
+    .cart-item-footer {
+        display: flex;
+        align-items: center;
+        justify-content: space-around;
+        padding-top: 2rem;
+        font-size: 2.5em;
+    }
+
+    .empty-cart-container {
+        color: #222;
+        border-radius: 1rem;
+        padding: 0.5rem;
+        margin-top: 10rem;
+        text-align: center;
+        font-size: 10em;
+    }
+
+}
+
+@media only screen and (min-width:1280px) {
+
+    .cart-container {
+        position: absolute;
+        width: 50vw !important;
+        background: #fff;
+        color: #222;
+        border-radius: 1rem;
+        box-shadow: 0 0 10px rgb(0 0 0 / 50%);
+        padding: 0.5rem;
+        z-index: 1000000;
+    }
+
+    .cart-body {
+        padding: 1rem;
+        height: 450px;
+        overflow: hidden;
+        overflow-y: scroll;
+    }
+
+    .cart-item {
+        margin: auto !important;
+        margin-bottom: 3rem !important;
+        width: 500px;
+    }
+
+    .cart-item-header {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        font-size: 2.5em;
+    }
+
+    .cart-item-header p{
+        margin-bottom: .5rem;
+    }
+
+    .cart-item-img {
+        width: 300px;
+        height: 200px;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        margin: auto;
+    }
+
+    .cart-item-footer {
+        display: flex;
+        align-items: center;
+        justify-content: space-around;
+        padding-top: 2rem;
+        font-size: 2.5em;
+    }
+
+}

@@ -3,3 +3,33 @@
     display: grid;
     grid-auto-flow: row;
 }
+
+@media only screen and (min-width:620px) and (max-width: 1280px){
+
+    .products-container{
+        display: grid;
+        grid-template-columns: repeat(2,1fr);
+    }
+    
+}
+
+@media only screen and (min-width:1280px) {
+
+    .products-container{
+        display: grid;
+        grid-template-columns: repeat(3,1fr);
+    }
+    
+    .products-container .cards-list{
+        width: 30vw;
+    }
+
+    .products-container .card-list-img{
+        width: 350px;
+    }
+
+    .products-container .card-list form div{
+        justify-content: space-around;
+    }
+
+}

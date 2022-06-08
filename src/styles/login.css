@@ -90,3 +90,30 @@
     font-size: .7em;
     cursor: pointer;
 }
+
+@media only screen and (min-width:620px) and (max-width: 1280px) {
+
+    .login-section{
+        width: 65vw;
+    }
+
+    .input-container input{
+        height: 3.5vh;
+        width: 50vw ;
+        border: 0;
+        font-size: .5em;
+    }
+
+}
+
+@media only screen and (min-width:1280px) {
+
+    .login {
+        width: 99vw;
+        height: 120vh;
+        display: flex;
+        justify-content: center;
+        align-items: flex-start;
+    }
+
+}

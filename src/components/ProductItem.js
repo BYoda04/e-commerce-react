@@ -58,14 +58,18 @@ const ProductItem = ({product}) => {
         <>
             <div className='cards-list day-shadow product-item' onClick={()=>productItem(product.id)}>
                 <div className='card-list-container'>
-                    <div className='card-list-img'>
-                        <div className='card-list-img-container img'><img src={product?.productImgs[2]}alt='img-product'></img></div>
-                    </div>
-                    <div className='card-list-name'>
-                        {product?.title}
-                    </div>
-                    <div className='description'>
-                        <p>{product?.description}</p>
+                    <div className='card-lis-flex'>
+                        <div className='card-list-img'>
+                            <div className='card-list-img-container img'><img src={product?.productImgs[2]}alt='img-product'></img></div>
+                        </div>
+                        <div className='card-list-text-content'>
+                            <div className='card-list-name'>
+                                {product?.title}
+                            </div>
+                            <div className='description'>
+                                <p>{product?.description}</p>
+                            </div>
+                        </div>
                     </div>
                     <form className='card-list-add' onSubmit={handleSubmit(addCart)}>
                         <div className='stock'>
@@ -90,12 +94,14 @@ const ProductItem = ({product}) => {
             <div className={ dayORnight ? 'button-back nightBG': 'button-back dayBg'}>
                 <p>Discover Similar Items</p>
             </div>
-            {loading? 
-            <>
-                {productsCategorys?.map(category=>(
-                <ProductsList product={category} key={category.id}/>
-                ))} 
-            </> : ""}
+            <div className='grid-cards'>
+                {loading? 
+                <>
+                    {productsCategorys?.map(category=>(
+                    <ProductsList product={category} key={category.id}/>
+                    ))} 
+                </> : ""}
+            </div>
         </>
     );
 };

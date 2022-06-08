@@ -1,5 +1,6 @@
 .purchases{
     width: 100vw;
+    height: 100vh;
     display: flex;
     align-items: center;
     justify-content: center;
@@ -31,4 +32,22 @@
     border-top: 1px solid #222;
     border-bottom: 1px solid #222;
     letter-spacing: .05em;
+}
+
+@media only screen and (min-width:620px) and (max-width: 1280px) {
+
+    .purchases-container{
+        display: grid;
+        grid-template-columns: repeat(2,1fr);
+    }
+
+}
+
+@media only screen and (min-width:1280px) {
+
+    .purchases-container{
+        display: grid;
+        grid-template-columns: repeat(3,1fr);
+    }
+
 }
