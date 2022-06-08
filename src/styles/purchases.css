@@ -1,0 +1,18 @@
+.purchases{
+    width: 100vw;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding-left: 1rem;
+    padding-right: 1rem;
+    padding-bottom: 1.5rem;
+}
+
+.purchase-item{
+    background: #fff;
+    color: #222;
+    border-radius: 1rem;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
+    padding: 1rem;
+    margin: 1rem;
+}

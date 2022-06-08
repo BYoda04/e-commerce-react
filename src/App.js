@@ -11,6 +11,7 @@ import './styles/productItem.css'
 import './styles/filter.css'
 import './styles/login.css'
 import './styles/logOut.css'
+import './styles/purchases.css'
 import { HashRouter, Routes, Route } from 'react-router-dom'
 import { ProtectedRoutes, Nav, MoodNight } from './components';
 import { Home, Login, Products, Purchases } from './pages';
