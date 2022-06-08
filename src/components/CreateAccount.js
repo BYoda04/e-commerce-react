@@ -57,7 +57,7 @@ const CreateAccount = () => {
                 <label htmlFor='email'>Please sign up to continue shopping</label>
             </div>
             {error? <div>
-                <p>complete todos los campos</p>
+                <p>fill in all the fields</p>
             </div> : <></>}
             <form onSubmit={handleSubmit(submit)}>
                 <div>

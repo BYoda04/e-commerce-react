@@ -1,7 +1,7 @@
 import React, { useEffect, useState } from 'react';
+import PurchaseProducts from './PurchaseProducts';
 
 const PurchasesItem = ({product}) => {
-    console.log(product);
 
     const [array,setArray] = useState([])
     const [date,setDate] = useState([])
@@ -19,8 +19,13 @@ const PurchasesItem = ({product}) => {
 
     return (
         <div className='purchase-item'>
-            <div>
+            <div className='header-date'>
                 <>{date.length!==0? <h3>{months[parseInt(date[1])-1]} {date[2]}, {date[0]}</h3> :<></>}</>
+            </div>
+            <div>
+                {product?.cart?.products?.map(product=>(
+                    <PurchaseProducts product={product} key={product?.id}/>
+                ))}
             </div>
         </div>
     );

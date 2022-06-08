@@ -1,5 +1,6 @@
 import React from 'react';
 import { useDispatch, useSelector } from 'react-redux';
+import { setCart } from '../store/slices/cart.slice';
 import { loggin } from '../store/slices/loged.slice';
 import { setPurchases } from '../store/slices/purchases.slice';
 import { setUser } from '../store/slices/user.slice';
@@ -14,6 +15,7 @@ const LogOut = () => {
         dispatch(loggin(false))
         dispatch(setUser([]))
         dispatch(setPurchases([]))
+        dispatch(setCart([]))
     }
 
     return (

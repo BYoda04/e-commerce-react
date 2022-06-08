@@ -14,16 +14,33 @@ nav{
     color: #222;
 }
 
-.logo a{
-    color: #222;
-}
-
 .buttons{
     display: flex;
     justify-content: center;
     align-items: center;
     gap: 5px;
     font-size: 2em;
+}
+
+.counter{
+    width: 6.5vw;
+    height: 4vh;
+    position: absolute;
+    top: 1vh;
+    right: 4vw;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background: #fff;
+    color: #222;
+    border-radius: 100%;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
+    font-size: .7em;
+    text-align: center;
+}
+
+.logo a{
+    color: #222;
 }
 
 .buttons a,.buttons p{
@@ -33,4 +50,11 @@ nav{
     padding: .5rem;
     height: 8vh;
     color: #222;
+}
+
+.counter p{
+    display: block !important;
+    padding: 0 !important;
+    width: auto;
+    height: auto;
 }

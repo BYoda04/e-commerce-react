@@ -12,8 +12,11 @@ import './styles/filter.css'
 import './styles/login.css'
 import './styles/logOut.css'
 import './styles/purchases.css'
+import './styles/empty.css'
+import './styles/cart.css'
+import './styles/cartItem.css'
 import { HashRouter, Routes, Route } from 'react-router-dom'
-import { ProtectedRoutes, Nav, MoodNight } from './components';
+import { ProtectedRoutes, Nav, MoodNight, Cart } from './components';
 import { Home, Login, Products, Purchases } from './pages';
 import { useSelector } from 'react-redux';
 
@@ -24,6 +27,7 @@ function App() {
   return (
       <HashRouter>
         <div className={dayORnight ? 'App nightBG' : 'App dayBG'}>
+        <Cart />
           <Nav />
           <Routes>
 

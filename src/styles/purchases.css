@@ -9,10 +9,26 @@
 }
 
 .purchase-item{
+    width: 300px;
     background: #fff;
     color: #222;
     border-radius: 1rem;
     box-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
     padding: 1rem;
     margin: 1rem;
+}
+
+.header-date{
+    border-bottom: 1px solid #222;
+}
+
+.purchase-product{
+    margin: 1rem;
+    padding: .5rem;
+}
+
+.purchase-product-container{
+    border-top: 1px solid #222;
+    border-bottom: 1px solid #222;
+    letter-spacing: .05em;
 }

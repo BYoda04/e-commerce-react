@@ -8,6 +8,7 @@ import { setUser } from '../store/slices/user.slice';
 const LogIn = () => {
 
     const [visible,setVisible] = useState(false)
+    const [error,setError] = useState(false)
     const { register, handleSubmit } = useForm()
     const dispatch = useDispatch()
 
@@ -26,6 +27,10 @@ const LogIn = () => {
             })
             .catch(err=>{
                 localStorage.setItem("status",err.response.status)
+                setError(true)
+                setTimeout(() => {
+                    setError(false)
+                }, 1500);
             })
     }
 
@@ -34,6 +39,9 @@ const LogIn = () => {
             <div className='title'>
                 <label htmlFor='email'>Please log in to continue shopping</label>
             </div>
+            {error? <div>
+                <p>wrong credentials</p>
+            </div> : <></>}
             <form onSubmit={handleSubmit(submit)}>
                 <div>
                     <label htmlFor='email'>email</label>
