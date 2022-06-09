@@ -15,8 +15,12 @@ export const cartSlice = createSlice({
 export const { setCart } = cartSlice.actions;
 
 export const getCart = () => (dispatch) => {
-    return axios.get("https://ecommerce-api-react.herokuapp.com/api/v1/cart",getConfig())
-        .then((res) => dispatch(setCart(res.data.data.cart.products)))
+    let proob = getConfig()
+    if (proob.headers.Authorization !== "Bearer null") {
+        return axios.get("https://ecommerce-api-react.herokuapp.com/api/v1/cart",getConfig())
+            .then((res) => dispatch(setCart(res.data.data.cart.products)))
+            .catch(err=>dispatch(setCart([])))
+    }
 }
 
 export default cartSlice.reducer;

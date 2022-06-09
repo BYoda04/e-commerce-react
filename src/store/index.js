@@ -11,6 +11,7 @@ import user from './slices/user.slice';
 import purchases from './slices/purchases.slice';
 import modal from './slices/modal.slice';
 import cart from './slices/cart.slice';
+import quantity from './slices/quantity.slice';
 
 export default configureStore({
     reducer: {
@@ -25,6 +26,7 @@ export default configureStore({
         user,
         purchases,
         modal,
-        cart
+        cart,
+        quantity
     }
 })

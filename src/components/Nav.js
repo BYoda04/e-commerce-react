@@ -1,15 +1,16 @@
-import { React, useEffect, useState } from 'react';
+import { React, useEffect } from 'react';
 import { useDispatch, useSelector } from 'react-redux';
 import { Link, useNavigate } from 'react-router-dom';
 import { active } from '../store/slices/modal.slice';
 import { getCart } from '../store/slices/cart.slice';
+import { setQuantity } from '../store/slices/quantity.slice';
 
 const Nav = () => {
 
   const dispatch = useDispatch()
   const loged = useSelector(state=>state.loged)
   const cart = useSelector(state=>state.cart)
-  const [quantity,setQuantity] = useState(0) 
+  const quantity = useSelector(state=>state.quantity) 
   const navigate = useNavigate()
 
   const modal = ()=>{
@@ -26,8 +27,11 @@ const Nav = () => {
   },[loged,dispatch])
 
   useEffect(()=>{
-    setQuantity(cart.length)
-  },[cart])
+    dispatch(setQuantity(cart.length))
+    if (!loged) {
+      dispatch(setQuantity(0))
+    }
+  },[cart,dispatch,loged])
 
   return (
       <nav className='dayBG'>
