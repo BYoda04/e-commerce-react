@@ -28,10 +28,7 @@ const Nav = () => {
 
   useEffect(()=>{
     dispatch(setQuantity(cart.length))
-    if (!loged) {
-      dispatch(setQuantity(0))
-    }
-  },[cart,dispatch,loged])
+  },[cart,dispatch])
 
   return (
       <nav className='dayBG'>
